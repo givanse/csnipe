@@ -82,6 +82,7 @@ window.applicationCache.addEventListener(
 window.applicationCache.addEventListener(
     'error', 
     function(e) {
+        /* It is enough to find one 400 or 500 error for the whole thing to fail. */
         console.log(window.applicationCache);
     }, 
     false
