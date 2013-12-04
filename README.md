@@ -1,9 +1,1 @@
-csnipe
-======
-
-C snippets
-
-jssnipe
-======
-
-Javascript snippets
+Code snippets and utility scripts.
