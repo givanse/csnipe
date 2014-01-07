@@ -15,6 +15,7 @@ sudo apt-get --purge remove $web $games $office $media $other
 # INSTALL
 apps='ubuntuone-control-panel-qt vim'
 connectivity='openssh-client'
-sudo apt-get install $connectivity $apps 
+dev='git'
+sudo apt-get install $connectivity $apps $dev
 
 #EOF
