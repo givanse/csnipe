@@ -15,7 +15,7 @@ sudo apt-get --purge remove $web $games $office $media $other $system_tools
 
 # INSTALL
 apps='ubuntuone-control-panel-qt vim'
-connectivity='openssh-client'
+connectivity='openssh-client xchat'
 dev='git'
 sudo apt-get install $connectivity $apps $dev
 
