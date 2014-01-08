@@ -23,5 +23,8 @@ openbox --reconfigure
 
 # git
 git config --global user.name givanse
+git config --global user.mail foobar@mail.com
+git config --global core.editor 'vim'
+git config --global -e
 
 #EOF
