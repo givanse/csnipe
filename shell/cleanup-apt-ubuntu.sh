@@ -7,8 +7,10 @@
 
 set -e
 
-echo 'Warning: This script will remove old kernels without prompt.
-         If you have recently installed new kernels, run after a reboot.'
+echo '
+Warning: This script will remove old kernels without prompt.
+         If you have recently installed new kernels, 
+         execute this script after a reboot.'
 read -e -p 'Do you want to continue? [yes|no]: ' -i 'no' response
 if [[ $response != 'yes' ]] 
 then
