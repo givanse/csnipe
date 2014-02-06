@@ -2,21 +2,33 @@
 
 set -e
 
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+
 sudo apt-get update
 
 # REMOVE
-web='thunderbird* gwibber* pidgin* sylpheed*'
-games='ace-of-penguins gnome-game*'
-office='libreoffice* abiword* gnumeric* simple-scan xpad'
-media='audacious* gnome-mplayer xfburn guvcview'
-other='compiz* blueman update-manager lubuntu-software-center'
-system_tools='xterm'
-sudo apt-get --purge remove $web $games $office $media $other $system_tools 
+packages='
+abiword* ace-of-penguins audacious* 
+blueman 
+compiz* 
+gnome-game* gnome-mplayer gnumeric* guvcview gwibber*
+libreoffice* lubuntu-software-center
+pidgin* 
+simple-scan sylpheed*
+thunderbird* 
+update-manager 
+xfburn xpad xterm
+'
+sudo apt-get --purge remove $packages
 
 # INSTALL
-apps='ubuntuone-control-panel-qt vim'
-connectivity='openssh-client xchat'
-dev='git'
-sudo apt-get install $connectivity $apps $dev
+packages='
+git
+openssh-client xchat
+sublime-text-installer
+ubuntuone-control-panel-qt 
+vim 
+'
+sudo apt-get install $packages
 
 #EOF
