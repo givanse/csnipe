@@ -30,3 +30,4 @@ augroup END
 " Switch to the next tab by pressing <F2>
 map <F2> :tabn
 
+highlight Comment ctermfg=LightBlue
