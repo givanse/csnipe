@@ -17,18 +17,19 @@ pidgin*
 simple-scan sylpheed*
 thunderbird* 
 update-manager 
-xfburn xpad xterm
-'
+xfburn xpad xterm'
+
 sudo apt-get --purge remove $packages
 
 # INSTALL
 packages='
+dia
 git
 openssh-client xchat
 sublime-text-installer
 ubuntuone-control-panel-qt 
-vim 
-'
+vim'
+
 sudo apt-get install $packages
 
 #EOF
